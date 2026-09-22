@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#nav_warna, header a {
+    color: white;
+}
+
+.navbar {
+    background-color: #3D4127;
+    padding: 15px 0;
+}
+
+.navbar_isi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigasi a {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navigasi a:hover {
+    background-color:#BAC095;
+    border-radius: 5px;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.kemampuan_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+.kemampuan_kartu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+ 
+.kemampuan_kartu:hover {
+    border-color: #1a1a2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.proyek_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+.project-card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 280px;
+}
+ 
+.project-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+.project-card_judul {
+    background-color: #BAC095;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.project-card_isi {
+    padding: 20px 20px;
+}
+
+.kontak_bg {
+    background-color: #cccccc;
+}
+
+.kontak_list {
+    margin: 15px 15px;
+}
+ 
+.kontak_list li {
+    margin-bottom: 5px;
+}
+ 
+.kontak_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+ 
+.kontak_form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+ 
+.kontak_form input,
+.kontak_form textarea {
+    padding: 10px;
+    border: 10px;
+    border-radius: 5px;
+}
+ 
+.kontak_form input:focus,
+.kontak_form textarea:focus {
+    outline: none;
+}
+ 
+.kontak_form button {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3D4127;
+    color: white;
+}
+
+footer {
+    background-color: #3D4127;
+    color: white;
+    padding: 20px 20px;
+}
+ 
+.footer_isi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+ 
+.footer_sosialMedia {
+    display: flex;
+    gap: 20px;
+}
+ 
+.footer_sosialMedia a:hover {
+    border: #3D4127;
+    border-radius: 3px;
+    color: white;
+    text-decoration: underline;
+    background-color:#BAC095;
+}
+
+.footer_sosialMedia a{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .kemampuan_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .foto {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+ 
+    .proyek_grid {
+        flex-direction: column;
+    }
+ 
+    .project-card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar_isi {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
